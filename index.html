@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KevinPineda   - Desarrollador Web especializado en tecnologías modernas">
+    <meta name="keywords" content="desarrollador, web developer, frontend, backend, javascript, react">
+    <meta name="author" content="KevinPineda">
+    <title>KevinPineda - Desarrollador Web</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <span class="logo-k">Pineda</span>
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="loading-text">Cargando portafolio...</div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-name">KevinPineda</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Acerca</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <!-- Particles disabled to fix movement bugs -->
+            <!-- <div class="golden-particles"></div> -->
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    
+                    <h1 class="hero-title">
+                        <span class="name-text">Kevin Pineda</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text" id="typingText"></span>
+                    </div>
+                    <p class="hero-description">
+                        Estudiante de Ingeniería de Desarrollo de Software, apasionado por crear experiencias web excepcionales y proyectos únicos.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/kevinpineda02" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kevin-pineda-7ab113384" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pineda.023/" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <div class="editor-buttons">
+                                <div class="btn-close"></div>
+                                <div class="btn-minimize"></div>
+                                <div class="btn-maximize"></div>
+                            </div>
+                            <div class="editor-title">portfolio.js</div>
+                        </div>
+                        <div class="editor-body">
+                            <div class="line-numbers">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                            </div>
+                            <div class="code-content">
+                                <pre id="codeAnimation"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">01</span>
+                    Acerca de Mí
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Soy un desarrollador web apasionado por crear soluciones 
+                        digitales innovadoras que combinan funcionalidad excepcional.
+                    </p>
+                   
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Código Limpio</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Diseño Responsive</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Rendimiento</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">02</span>
+                    Proyectos
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/Imagenes/IA.png" alt="Asistente Virtual De IA">
+                        <div class="project-overlay">
+                            <div class="project-preview">
+                                <h4>Vista Previa del Proyecto</h4>
+                                <p>Plataforma Del asistente Virtual universitario</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Asistente Virtual De IA</h3>
+                        <p class="project-description">
+                            Plataforma de asistente virtual  impulsada por IA y entrenada  con datos específicos de la universidad, con integración de voz y chat.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://chatbot-gv-ia.vercel.app/" class="btn-primary">
+                                <i class="fas fa-globe"></i>
+                                Ver Sitio Web
+                            </a>
+                            <a href="https://github.com/kevinpineda02/ChatbotGV-IA" class="btn-secondary">
+                                <i class="fab fa-github"></i>
+                                Ver Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/Imagenes/IICES.png" alt="IICES">
+                        <div class="project-overlay">
+                            <div class="project-preview">
+                                <h4>Vista Previa del Proyecto</h4>
+                                <p>Land Page IICES</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Plataforma Web IICES</h3>
+                        <p class="project-description">
+                            Plataforma web para la Iglesia Internacional De Cristo El Salvador (IICES),
+                            Con galeria de imagenes y ubicacion.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://iices.vercel.app/" class="btn-primary">
+                                <i class="fas fa-globe"></i>
+                                Ver Sitio Web
+                            </a>
+                            <a href="https://github.com/kevinpineda02/IICES" class="btn-secondary">
+                                <i class="fab fa-github"></i>
+                                Ver Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/Imagenes/G-Net.png" alt="G-Net">
+                        <div class="project-overlay">
+                            <div class="project-preview">
+                                <h4>Vista Previa del Proyecto</h4>
+                                <p>Red Social G-Net</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Red Social G-Net</h3>
+                        <p class="project-description">
+                            Plataforma de red social con funciones de mensajería, publicación de contenido
+                            y gestión de usuarios.(Aún en desarrollo).
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">HTML</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://g-net.vercel.app/" class="btn-primary">
+                                <i class="fas fa-globe"></i>
+                                Ver Sitio Web
+                            </a>
+                            <a href="https://github.com/kevinpineda02/Login-G-Net" class="btn-secondary">
+                                <i class="fab fa-github"></i>
+                                Ver Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/Imagenes/Login G-Net.png" alt="Login-G-Net">
+                        <div class="project-overlay">
+                            <div class="project-preview">
+                                <h4>Vista Previa del Proyecto</h4>
+                                <p>Login G-Net</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Login G-Net</h3>
+                        <p class="project-description">
+                            Login de la plataforma de red social G-Net, con autenticación segura y diseño moderno (Aún en desarrollo).
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://login-g-net.vercel.app/" class="btn-primary">
+                                <i class="fas fa-globe"></i>
+                                Ver Sitio Web
+                            </a>
+                            <a href="https://github.com/kevinpineda02/Login-G-Net" class="btn-secondary">
+                                <i class="fab fa-github"></i>
+                                Ver Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">03</span>
+                    Contacto
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h3 class="contact-subtitle">¡Trabajemos Juntos!</h3>
+                        <p class="contact-description">
+                            ¿Tienes un proyecto en mente? Me encanta colaborar en ideas innovadoras
+                            y ayudar a convertir visiones en realidades digitales. Contáctame y
+                            hablemos sobre cómo puedo contribuir a tu próximo proyecto.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-data">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">kevinpineda200.kp@gmail.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-data">
+                                <span class="contact-label">Teléfono</span>
+                                <span class="contact-value">+503 7912 2628</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-data">
+                                <span class="contact-label">Ubicación</span>
+                                <span class="contact-value">El Salvador, San Salvador</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nombre</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Asunto</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 kevinpineda02. Todos los derechos reservados.</p>
+                    <p>Diseñado y desarrollado con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i></p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/kevinpineda02" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kevin-pineda-7ab113384" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pineda.023/" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
