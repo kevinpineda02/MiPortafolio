@@ -248,7 +248,6 @@ body {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: var(--spacing-lg);
 }
 
 .nav-item {
@@ -604,6 +603,59 @@ section {
   box-shadow: var(--glow-gold);
 }
 
+/* Botón de descarga de CV: combina icono y texto manteniendo el estilo de los enlaces sociales */
+.social-link.cv-download {
+  /* Mostrar solo icono: mantener mismo tamaño y estilo que otros social-link */
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-download i {
+  font-size: 1.1rem;
+}
+
+/* Texto CV removido: mantener reglas por compatibilidad si se reintroduce */
+.cv-text {
+  display: none;
+}
+
+/* Adaptación para footer donde los iconos son más pequeños */
+.footer-social .social-link.cv-download {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+/* Ocultar texto CV en pantallas pequeñas para mantener diseño compacto */
+@media (max-width: 768px) {
+  .cv-text { display: none; }
+  /* En móvil igual tamaño que otros iconos */
+  .social-link.cv-download { width: 50px; padding: 0; border-radius: 50%; }
+  .footer-social .social-link.cv-download { width: 40px; }
+}
+
+/* Tamaño y alineación del SVG dentro del botón CV */
+.cv-download .cv-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Ajuste en footer (icono un poco más pequeño) */
+.footer-social .cv-download .cv-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Asegurar que el SVG herede el color del link (currentColor) */
+.cv-download .cv-icon { color: inherit; }
+
 /* Hero Visual */
 .hero-visual {
   display: flex;
@@ -892,7 +944,7 @@ section {
    ================================= */
 
 .skills {
-  background: var(--primary-bg);
+  background: #131311;
   position: relative;
 }
 
@@ -980,7 +1032,7 @@ section {
 .skill-icon {
   width: 50px;
   height: 50px;
-  background: var(--gradient-gold);
+  background: transparent;
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
@@ -988,6 +1040,66 @@ section {
   font-size: 1.5rem;
   color: var(--primary-bg);
   flex-shrink: 0;
+}
+
+/* Estilos específicos para el icono de TypeScript (usa SVG azul) */
+.skill-icon.ts-icon {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.skill-icon.ts-icon .skill-svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* Estilos para el icono de JavaScript (SVG amarillo) */
+.skill-icon.js-icon {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.skill-icon.js-icon .skill-svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* Estilos para el icono de CSS (SVG azul) */
+.skill-icon.css-icon {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.skill-icon.css-icon .skill-svg {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+/* Estilos para el icono de HTML (SVG) */
+.skill-icon.html-icon {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.skill-icon.html-icon .skill-svg {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+/* Estilos para el icono de Java (SVG) */
+.skill-icon.java-icon {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.skill-icon.java-icon .skill-svg {
+  width: 38px;
+  height: 38px;
+  display: block;
 }
 
 .skill-details {
@@ -2421,7 +2533,7 @@ section {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     content: '\f00d';
-    color: var(--gold-primary);
+    color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
     z-index: 1;

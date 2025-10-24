@@ -186,6 +186,14 @@ class NavigationManager {
   handleNavigation() {
     this.navLinks.forEach((link, index) => {
       link.addEventListener('click', (e) => {
+        // Allow default behavior for CV/download links or external files (PDFs)
+        const href = link.getAttribute('href') || '';
+        if (link.classList.contains('cv-download') || link.hasAttribute('download') || href.toLowerCase().endsWith('.pdf')) {
+          // let the browser handle the download; on mobile the menu should still close
+          this.closeMobileMenu();
+          return;
+        }
+
         e.preventDefault();
         const targetId = link.getAttribute('href');
         const targetSection = $(targetId);
