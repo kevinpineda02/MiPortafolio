@@ -3,619 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KevinPineda   - Desarrollador Web especializado en tecnologías modernas">
-    <meta name="keywords" content="desarrollador, web developer, frontend, backend, javascript, react">
-    <meta name="author" content="KevinPineda">
-    <title>KevinPineda - Desarrollador Web</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link href="colors.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Portafolio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-container">
-            <div class="loading-logo">
-                <span class="logo-k">Pineda</span>
-                <div class="loading-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <!-- Header -->
+     <div class="header">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de mí</a></li>
+                <li><a href="#softskills">Soft Skills</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="CV/Cv.pdf" download="CV_Kevin_Pineda.pdf">CV</a></li>
+            </ul>
+        </nav>
+     </div>
+     <!-- Main Content -->
+      <!-- Primera Seccion -->
+    <main>
+    <div class="container-one" id="home">
+        <section id="content-one">
+            <div class="title">
+            <h1>Bienvenidos al Portafolio de<br> Kevin Pineda</h1>
+            <p>Explora mis proyectos y habilidades en desarrollo web, aplicaciones de escritorio y diseño digital. Aquí encontrarás trabajos que muestran mi experiencia creando soluciones funcionales y visualmente atractivas. Revisa cada sección y cuéntame qué te parece.</p>
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/kevin-pineda-7ab113384" target="_blank" title="LinkedIn" class="social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/kevinpineda02" target="_blank" title="GitHub" class="social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+            </div>
+            <div class="image-one">
+                <img src="images/computer/computer-programming.png" alt="Imagen de computadora con iconos de HTML y CSS">
+            </div>
+        </section>
+    </div>
+
+    <!-- Segunda Seccion -->
+    <div class="container-two" id="about">
+        <section class="line">
+            <div class="subtitle">
+                <h2>Sobre mí</h2>
+            </div>
+            <div class="information">
+                <div class="image-two" alt="persona-con-laptop">
+                    <img src="images/developer/Developer2.png" alt="Persona con laptop">
+                </div>
+                <div class="information">
+                    <span class="info-text">
+                        Soy Kevin Pineda, Developer Full Stack con experiencia en la creación de páginas web, aplicaciones de escritorio y diseño web, tambien con experencia en el area del hardware computacional. Me apasiona crear diseños atractivos y funcionales que mejoren la experencia del usuario. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.
+                    </span>
                 </div>
             </div>
-            <div class="loading-text">Cargando portafolio...</div>
-            <div class="loading-progress">
-                <div class="progress-bar"></div>
+            </section>
+    </div>
+
+    <!-- Tercera Seccion -->
+     <div class="container-three" id="softskills">
+        <div class="subtitle">
+        <h2>Mis Soft Skills</h2>
+    </div>
+
+        <div class="soft-skills">
+            <h3 class="FrontEnd">Lenguajes y Tecnologías FrontEnd</h3>
+            <ul>
+                <li class="skill-item">
+                    <img src="images/softskills/html.png" alt="Icono de HTML5">
+                    <p>HTML5</p>
+                </li>
+                <li class="skill-item">
+                    <img src="images/softskills/css.png" alt="Icono de CSS3">
+                    <p>CSS3</p>
+                </li>
+                <li class="skill-item">
+                    <img src="images/softskills/javascript.png" alt="Icono de JavaScript">
+                    <p>JavaScript</p>
+                </li>
+                <li class="skill-item">
+                    <img src="images/softskills/typescript.png" alt="Icono de TypeScript">
+                    <p>TypeScript</p>
+                </li>
+            </ul>
+            <h3 class="BackEnd">Lenguajes y Tecnologías BackEnd</h3>
+            <ul>
+                <li class="skill-item">
+                    <img src="images/softskills/java.png" alt="Icono de Java">
+                    <p>Java</p>
+                </li>
+                <li class="skill-item">
+                    <img src="images/softskills/nodejs.png" alt="Icono de Node.js">
+                    <p>Node.js</p>
+                </li>
+                <li class="skill-item">
+                    <img src="images/softskills/mysql.png" alt="Icono de MySQL">
+                    <p>MySQL</p>
+                <li class="skill-item">
+                    <img src="images/softskills/c-sharp.png" alt="Icono de C#">
+                    <p>C#</p>
+                </li>
+            </ul>
+            <h3 class="Tools">Herramientas de desarrollo</h3>
+            <ul>
+                <li class="skill-item">
+                    <img src="images/softskills/git.png" alt="Icono de Git">
+                    <p>Git</p>
+                </li>
+                <li class="skill-item">
+                    <img src="images/softskills/visual-comunnity.png" alt="Icono de Visual Studio Community">
+                    <p>Visual Studio Community</p>
+                </li>
+                <li class="skill-item">
+                    <img src="images/softskills/visual-code.png" alt="Icono de Visual Studio Code">
+                    <p>Visual Studio Code</p>
+                </li>
+            </ul>
+        </div>
+     </div>
+</div>
+    <!-- Cuarta Seccion - Proyectos -->
+    <div class="container-four" id="projects">
+        <div class="subtitle">
+            <h2>Mis Proyectos</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Imagenes/G-NET.png" alt="Proyecto 1">
+                </div>
+                <div class="project-info">
+                    <h3>Red Social UFG</h3>
+                    <p>Red social universitaria para la gestión de usuarios, publicaciones y comentarios entre estudiantes.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://g-net.vercel.app/" class="btn-project">Ver Proyecto</a>
+                        <a href="https://github.com/kevinpineda02/G-Net" class="btn-project btn-secondary">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Imagenes/IICES.png" alt="Proyecto 2">
+                </div>
+                <div class="project-info">
+                    <h3>IICES</h3>
+                    <p>Sitio web para Iglesia Internacional de Cristo en El Salvador. Incluye información institucional, galería de eventos , blog y  diseño responsivo.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://iices.vercel.app/" class="btn-project">Ver Proyecto</a>
+                        <a href="https://github.com/kevinpineda02/IICE" class="btn-project btn-secondary">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Imagenes/RRHH.png" alt="Proyecto 3">
+                </div>
+                <div class="project-info">
+                    <h3>Sistema RRHH</h3>
+                    <p>Aplicación de escritorio para gestión de currículum y recursos humanos desarrollada en Windows Forms.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kevinpineda02/GestorRRHH" class="btn-project btn-secondary">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Imagenes/image.png" alt="Proyecto 4">
+                </div>
+                <div class="project-info">
+                    <h3>Innova Devs</h3>
+                    <p>Landing page moderna del equipo Innova Devs con presentación de miembros, habilidades y proyectos para competencia STEAM.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://innova-dev-topaz.vercel.app/" class="btn-project">Ver Proyecto</a>
+                        <a href="https://github.com/kevinpineda02/InnovaDev" class="btn-project btn-secondary">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Imagenes/chatbot.png" alt="Proyecto 5">
+                </div>
+                <div class="project-info">
+                    <h3>Chatbot UFG</h3>
+                    <p>Chatbot inteligente con IA para la Universidad Francisco Gavidia. Responde preguntas sobre programas académicos, horarios y trámites administrativos de forma automática y eficiente (Desactivado).</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://chatbot-g-net-ia.vercel.app/" class="btn-project">Ver Proyecto</a>
+                        <a href="https://github.com/kevinpineda02/ChatbotGV-IA" class="btn-project btn-secondary">Código</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-name">KevinPineda</span>
-            </div>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">Acerca</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="/CV/Cv.pdf" class="nav-link cv-download" download="Kevin_Pineda_CV.pdf" title="Descargar CV">CV</a></li>
-            </ul>
-            
-            <div class="nav-toggle" id="navToggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Home Section -->
-    <section class="hero" id="home">
-        <div class="hero-background">
-            <!-- Particles disabled to fix movement bugs -->
-            <!-- <div class="golden-particles"></div> -->
-            <div class="hero-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
-        </div>
-        
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    
-                    <h1 class="hero-title">
-                        <span class="name-text">Kevin Pineda</span>
-                    </h1>
-                    <div class="hero-subtitle">
-                        <span class="typing-text" id="typingText"></span>
-                    </div>
-                    <p class="hero-description">
-                        Estudiante de Ingeniería de Desarrollo de Software, apasionado por crear experiencias web excepcionales y proyectos únicos.
-                    </p>
-                    
-                    <div class="social-links">
-                        <a href="https://github.com/kevinpineda02" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/kevin-pineda-7ab113384" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.instagram.com/pineda.023/" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                                                <!-- Botón para descargar CV -->
-                                                <a href="/CV/Cv.pdf" class="social-link cv-download" download="Kevin_Pineda_CV.pdf" title="Descargar CV">
-                                                        <!-- SVG inline: icono de descarga proporcionado -->
-                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cv-icon" aria-hidden="true" focusable="false">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                                                        </svg>
-                                                        
-                                                </a>
-                        
-                    </div>
-                </div>
-                
-                <div class="hero-visual">
-                    <div class="code-editor">
-                        <div class="editor-header">
-                            <div class="editor-buttons">
-                                <div class="btn-close"></div>
-                                <div class="btn-minimize"></div>
-                                <div class="btn-maximize"></div>
-                            </div>
-                            <div class="editor-title">portfolio.js</div>
-                        </div>
-                        <div class="editor-body">
-                            <div class="line-numbers">
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4</span>
-                                <span>5</span>
-                                <span>6</span>
-                                <span>7</span>
-                                <span>8</span>
-                            </div>
-                            <div class="code-content">
-                                <pre id="codeAnimation"></pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number">01</span>
-                    Acerca de Mí
-                </h2>
-                <div class="section-line"></div>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        Soy un desarrollador web apasionado por crear soluciones 
-                        digitales innovadoras que combinan funcionalidad excepcional.
-                    </p>
-                   
-                    
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <span>Código Limpio</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Diseño Responsive</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-rocket"></i>
-                            <span>Rendimiento</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-count="1">0</span>
-                            <span class="stat-label">Años de Experiencia</span>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-count="2">0</span>
-                            <span class="stat-label">Proyectos Completados</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Skills area añadida dentro de 'Acerca de Mí' -->
-                <div class="skills">
-                    <div class="skills-content">
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <div class="category-title">Frontend</div>
-                                <div class="skills-list">
-                                    <div class="skill-item">
-                                        <div class="skill-info">
-                                            <div class="skill-icon html-icon">
-                                                <!-- HTML5 SVG provided -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" role="img" viewBox="0 0 32 32" class="skill-svg">
-                                                  <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"/>
-                                                  <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"/>
-                                                  <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"/>
-                                                </svg>
-                                            </div>
-                                            <div class="skill-details">
-                                                <span class="skill-name">HTML5</span>
-                                                <div class="skill-bar">
-                                                    <div class="skill-progress" style="width: 95%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item">
-                                        <div class="skill-info">
-                                            <div class="skill-icon css-icon">
-                                                <!-- CSS3 SVG provided -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="CSS3" role="img" viewBox="0 0 32 32" class="skill-svg">
-                                                  <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"/>
-                                                  <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"/>
-                                                  <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"/>
-                                                </svg>
-                                            </div>
-                                            <div class="skill-details">
-                                                <span class="skill-name">CSS3</span>
-                                                <div class="skill-bar">
-                                                    <div class="skill-progress" style="width: 92%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item">
-                                        <div class="skill-info">
-                                            <div class="skill-icon js-icon">
-                                                <!-- JavaScript SVG provided -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512" class="skill-svg">
-                                                  <rect width="512" height="512" rx="15%" fill="#f7df1e"/>
-                                                  <path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"/>
-                                                </svg>
-                                            </div>
-                                            <div class="skill-details">
-                                                <span class="skill-name">JavaScript</span>
-                                                <div class="skill-bar">
-                                                    <div class="skill-progress" style="width: 88%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-category">
-                                <div class="category-title">Backend</div>
-                                <div class="skills-list">
-                                    <div class="skill-item">
-                                        <div class="skill-info">
-                                            <div class="skill-icon ts-icon">
-                                                <!-- TypeScript SVG provided -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="TypeScript" role="img" viewBox="0 0 512 512" class="skill-svg">
-                                                  <rect width="512" height="512" rx="15%" fill="#3178c6"/>
-                                                  <path fill="#ffffff" d="m233 284h64v-41H118v41h64v183h51zm84 173c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4c11-2.3 20-6.1 28-11c8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9c-5.2-2.6-9.7-5.2-13-7.8c-3.7-2.7-6.5-5.5-8.5-8.4c-2-3-3-6.3-3-10c0-3.4.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6c4.7-1.1 9.9-1.6 16-1.6c4.2 0 8.6.31 13 .94c4.6.63 9.3 1.6 14 2.9c4.7 1.3 9.3 2.9 14 4.9c4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21c-4.7 8.4-7 18-7 30c0 15 4.3 28 13 38c8.6 11 22 19 39 27c6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5c2.5 3.4 3.8 7.4 3.8 12c0 3.2-.78 6.2-2.3 9s-3.9 5.2-7.1 7.2s-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7c-11 0-22-1.9-32-5.7c-11-3.8-21-9.5-28.1-15.44z"/>
-                                                </svg>
-                                            </div>
-                                            <div class="skill-details">
-                                                <span class="skill-name">TypeScript</span>
-                                                <div class="skill-bar">
-                                                    <div class="skill-progress" style="width: 82%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item">
-                                        <div class="skill-info">
-                                            <div class="skill-icon js-icon">
-                                                <!-- JavaScript SVG (same as Frontend) -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512" class="skill-svg">
-                                                  <rect width="512" height="512" rx="15%" fill="#f7df1e"/>
-                                                  <path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"/>
-                                                </svg>
-                                            </div>
-                                            <div class="skill-details">
-                                                <span class="skill-name">JavaScript</span>
-                                                <div class="skill-bar">
-                                                    <div class="skill-progress" style="width: 88%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item">
-                                        <div class="skill-info">
-                                            <div class="skill-icon java-icon">
-                                                <!-- Java SVG provided by user -->
-                                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="Java" role="img" class="skill-svg">
-<path d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z" fill="#E76F00"/>
-<path d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z" fill="#E76F00"/>
-<path d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z" fill="#5382A1"/>
-<path d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z" fill="#5382A1"/>
-<path d="M11.6864 22.4758C9.55624 22.2592 10.951 21.2439 10.951 21.2439C5.43898 23.0429 14.0178 25.083 21.7199 22.8682C20.9012 22.5844 20.3806 22.0653 20.3806 22.0653C16.6163 22.7781 14.441 22.7553 11.6864 22.4758Z" fill="#5382A1"/>
-<path d="M12.6145 25.6991C10.486 25.4585 11.7295 24.7474 11.7295 24.7474C6.72594 26.1222 14.7729 28.9625 21.1433 26.2777C20.0999 25.8787 19.3528 25.4181 19.3528 25.4181C16.5111 25.9469 15.1931 25.9884 12.6145 25.6991Z" fill="#5382A1"/>
-<path d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z" fill="#5382A1"/>
-<path d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z" fill="#5382A1"/>
-</svg>
-                                            </div>
-                                            <div class="skill-details">
-                                                <span class="skill-name">Java</span>
-                                                <div class="skill-bar">
-                                                    <div class="skill-progress" style="width: 75%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item">
-                                        <div class="skill-info">
-                                            <div class="skill-icon sql-icon">
-                                                <!-- SQL SVG (exact from SVG/sql-svgrepo-com.svg) -->
-                                                <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="SQL" role="img" class="skill-svg" style="background: transparent;"><title>file_type_sql</title><path d="M8.562,15.256A21.159,21.159,0,0,0,16,16.449a21.159,21.159,0,0,0,7.438-1.194c1.864-.727,2.525-1.535,2.525-2V9.7a10.357,10.357,0,0,1-2.084,1.076A22.293,22.293,0,0,1,16,12.078a22.36,22.36,0,0,1-7.879-1.3A10.28,10.28,0,0,1,6.037,9.7v3.55C6.037,13.724,6.7,14.528,8.562,15.256Z" style="fill:#ffda44"/><path d="M8.562,21.961a15.611,15.611,0,0,0,2.6.741A24.9,24.9,0,0,0,16,23.155a24.9,24.9,0,0,0,4.838-.452,15.614,15.614,0,0,0,2.6-.741c1.864-.727,2.525-1.535,2.525-2v-3.39a10.706,10.706,0,0,1-1.692.825A23.49,23.49,0,0,1,16,18.74a23.49,23.49,0,0,1-8.271-1.348,10.829,10.829,0,0,1-1.692-.825V19.96C6.037,20.426,6.7,21.231,8.562,21.961Z" style="fill:#ffda44"/><path d="M16,30c5.5,0,9.963-1.744,9.963-3.894V23.269a10.5,10.5,0,0,1-1.535.762l-.157.063A23.487,23.487,0,0,1,16,25.445a23.422,23.422,0,0,1-8.271-1.351c-.054-.02-.106-.043-.157-.063a10.5,10.5,0,0,1-1.535-.762v2.837C6.037,28.256,10.5,30,16,30Z" style="fill:#ffda44"/><ellipse cx="16" cy="5.894" rx="9.963" ry="3.894" style="fill:#ffda44"/></svg>
-                                            </div>
-                                            <div class="skill-details">
-                                                <span class="skill-name">SQL</span>
-                                                <div class="skill-bar">
-                                                    <div class="skill-progress" style="width: 80%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Contenedor 'Herramientas' eliminado según solicitud -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number">02</span>
-                    Proyectos
-                </h2>
-                <div class="section-line"></div>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./Imagenes/IA.png" alt="Asistente Virtual De IA">
-                        <div class="project-overlay">
-                            <div class="project-preview">
-                                <h4>Vista Previa del Proyecto</h4>
-                                <p>Plataforma Del asistente Virtual universitario</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Asistente Virtual De IA</h3>
-                        <p class="project-description">
-                            Plataforma de asistente virtual  impulsada por IA y entrenada  con datos específicos de la universidad, con integración de voz y chat.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://chatbot-gv-ia.vercel.app/" class="btn-primary">
-                                <i class="fas fa-globe"></i>
-                                Ver Sitio Web
-                            </a>
-                            <a href="https://github.com/kevinpineda02/ChatbotGV-IA" class="btn-secondary">
-                                <i class="fab fa-github"></i>
-                                Ver Código
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./Imagenes/IICES.png" alt="IICES">
-                        <div class="project-overlay">
-                            <div class="project-preview">
-                                <h4>Vista Previa del Proyecto</h4>
-                                <p>Land Page IICES</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Plataforma Web IICES</h3>
-                        <p class="project-description">
-                            Plataforma web para la Iglesia Internacional De Cristo El Salvador (IICES),
-                            Con galeria de imagenes y ubicacion.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://iices.vercel.app/" class="btn-primary">
-                                <i class="fas fa-globe"></i>
-                                Ver Sitio Web
-                            </a>
-                            <a href="https://github.com/kevinpineda02/IICE" class="btn-secondary">
-                                <i class="fab fa-github"></i>
-                                Ver Código
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./Imagenes/G-NET.png" alt="G-Net">
-                        <div class="project-overlay">
-                            <div class="project-preview">
-                                <h4>Vista Previa del Proyecto</h4>
-                                <p>Red Social G-Net</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Red Social G-Net</h3>
-                        <p class="project-description">
-                            Plataforma de red social con funciones de mensajería, publicación de contenido
-                            y gestión de usuarios.(Aún en desarrollo).
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">HTML</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://g-net.vercel.app/" class="btn-primary">
-                                <i class="fas fa-globe"></i>
-                                Ver Sitio Web
-                            </a>
-                            <a href="https://github.com/kevinpineda02/Login-G-Net" class="btn-secondary">
-                                <i class="fab fa-github"></i>
-                                Ver Código
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./Imagenes/Login G-Net.png" alt="Login-G-Net">
-                        <div class="project-overlay">
-                            <div class="project-preview">
-                                <h4>Vista Previa del Proyecto</h4>
-                                <p>Login G-Net</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Login G-Net</h3>
-                        <p class="project-description">
-                            Login de la plataforma de red social G-Net, con autenticación segura y diseño moderno (Aún en desarrollo).
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://login-g-net.vercel.app/" class="btn-primary">
-                                <i class="fas fa-globe"></i>
-                                Ver Sitio Web
-                            </a>
-                            <a href="https://github.com/kevinpineda02/Login-G-Net" class="btn-secondary">
-                                <i class="fab fa-github"></i>
-                                Ver Código
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number">03</span>
-                    Contacto
-                </h2>
-                <div class="section-line"></div>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-text">
-                        <h3 class="contact-subtitle">¡Trabajemos Juntos!</h3>
-                        <p class="contact-description">
-                            ¿Tienes un proyecto en mente? Me encanta colaborar en ideas innovadoras
-                            y ayudar a convertir visiones en realidades digitales. Contáctame y
-                            hablemos sobre cómo puedo contribuir a tu próximo proyecto.
-                        </p>
-                    </div>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-data">
-                                <span class="contact-label">Email</span>
-                                <span class="contact-value">kevinpineda200.kp@gmail.com</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-data">
-                                <span class="contact-label">Teléfono</span>
-                                <span class="contact-value">+503 7912 2628</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-data">
-                                <span class="contact-label">Ubicación</span>
-                                <span class="contact-value">El Salvador, San Salvador</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form class="form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required>
-                            <label for="name">Nombre</label>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Email</label>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" required>
-                            <label for="subject">Asunto</label>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea id="message" name="message" required></textarea>
-                            <label for="message">Mensaje</label>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-submit">
-                            <span>Enviar Mensaje</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 kevinpineda02. Todos los derechos reservados.</p>
-                    <p>Diseñado y desarrollado con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i></p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://github.com/kevinpineda02" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kevin-pineda-7ab113384" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/pineda.023/" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                                        <!-- Botón para descargar CV (footer) -->
-                                        <a href="/CV/Cv.pdf" class="social-link cv-download" download="Kevin_Pineda_CV.pdf" title="Descargar CV">
-                                                <!-- SVG inline: icono de descarga proporcionado -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cv-icon" aria-hidden="true" focusable="false">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                                                </svg>
-                        
-                                        </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      </main>
     <script src="script.js"></script>
 </body>
 </html>
